@@ -40,6 +40,11 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'guardian'
+
+    'babies.apps.BabiesConfig',
+    'events.apps.EventsConfig',
+    'parents.apps.ParentsConfig',
+    'permissions.apps.PermissionsConfig'
 ]
 
 MIDDLEWARE = [
