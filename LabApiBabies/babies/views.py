@@ -15,7 +15,7 @@ class BabyViewSet(viewsets.ModelViewSet):
     queryset = Baby.objects.all()
     serializer_class = BabySerializer
     
-@action(detail=True, methods=['get'])
+    @action(detail=True, methods=['get'])
     def events(self, request, pk=None):
         baby = self.get_object()
         allEvents=[]
